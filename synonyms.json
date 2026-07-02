@@ -1,0 +1,15 @@
+{
+  "_doc": "Maps variant/misplaced labels -> canonical taxonomy value. Applied by apply_labels.py before validation. Keeps the vocabulary finite by folding near-duplicates and cross-axis mistakes into one term.",
+  "domain": {},
+  "article_type": {},
+  "method": {
+    "side-channel-analysis": "empirical-measurement"
+  },
+  "scope": {},
+  "problem": {
+    "authentication": "access-control",
+    "e-voting": "e-voting-verifiability",
+    "ddos-detection": "denial-of-service",
+    "consensus": "consensus-security"
+  }
+}

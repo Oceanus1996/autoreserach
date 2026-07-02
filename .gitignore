@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# labeling intermediates
+label_work/
+*.prompt
+*.tmp
+*.out.jsonl
+*.log
+
+# per-venue labeled outputs (regenerable)
+*.labeled.jsonl
+
+# OS
+Thumbs.db
+.DS_Store

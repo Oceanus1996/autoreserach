@@ -1,0 +1,70 @@
+{
+  "_doc": "Controlled vocabulary for the CS research index. Every label on a paper MUST come from these lists. Add a new term ONLY when nothing fits; prefer merging near-synonyms into one canonical term. kebab-case, lowercase.",
+  "axes": {
+    "domain": {
+      "cardinality": "single",
+      "desc": "The research subfield the paper belongs to.",
+      "values": [
+        "web-security", "network-security", "systems-security", "os-security",
+        "hardware-security", "mobile-security", "ml-security", "crypto",
+        "privacy", "malware", "authentication", "side-channel", "formal-methods",
+        "software-testing", "program-analysis", "program-repair", "empirical-se",
+        "se-for-ai", "code-generation", "software-maintenance", "human-factors"
+      ]
+    },
+    "article_type": {
+      "cardinality": "single",
+      "desc": "What kind of contribution the paper makes.",
+      "values": [
+        "problem-statement", "method-improvement", "empirical-study",
+        "measurement", "sok", "tool", "dataset", "benchmark", "user-study",
+        "attack", "defense"
+      ]
+    },
+    "method": {
+      "cardinality": "multi",
+      "desc": "The technique(s) the paper uses (HOW).",
+      "values": [
+        "fuzzing", "static-analysis", "dynamic-analysis", "symbolic-execution",
+        "taint-analysis", "dataflow-analysis", "binary-analysis",
+        "machine-learning", "deep-learning", "llm", "formal-verification",
+        "model-checking", "differential-testing", "program-synthesis",
+        "reverse-engineering", "cryptographic-protocol", "empirical-measurement",
+        "survey"
+      ]
+    },
+    "scope": {
+      "cardinality": "multi",
+      "desc": "The object / target / application the work operates on (ON WHAT).",
+      "values": [
+        "vr-ar", "iot", "android", "ios", "kernel", "firmware", "browser",
+        "web-app", "blockchain", "smart-contract", "compiler", "os",
+        "network-protocol", "tls", "dns", "ml-model", "llm-app", "cloud",
+        "embedded", "gpu", "wireless", "autonomous-vehicle", "database",
+        "mobile-app", "source-code", "binary", "cpu-microarchitecture"
+      ]
+    },
+    "problem": {
+      "cardinality": "multi",
+      "desc": "The task / goal the paper addresses (WHAT GOAL).",
+      "values": [
+        "vulnerability-detection", "bug-detection", "test-generation",
+        "program-repair", "exploit-generation", "malware-detection",
+        "side-channel-analysis", "deanonymization", "authentication-bypass",
+        "access-control", "privacy-leak-detection", "fault-localization",
+        "code-clone-detection", "specification-inference", "performance-bug",
+        "memory-safety", "phishing-detection", "misconfiguration-detection",
+        "information-flow", "adversarial-robustness",
+        "backdoor-attack", "backdoor-detection", "data-poisoning",
+        "model-extraction", "zero-knowledge-proof", "secure-computation",
+        "misinformation-detection", "content-moderation", "supply-chain-security",
+        "fault-injection", "intrusion-detection", "password-guessing",
+        "usable-security", "fraud-detection", "consensus-security",
+        "research-ethics", "breakage-detection", "remote-attestation",
+        "model-protection", "e-voting-verifiability", "variable-name-prediction",
+        "secure-deletion", "incident-response", "provenance-analysis",
+        "denial-of-service"
+      ]
+    }
+  }
+}
